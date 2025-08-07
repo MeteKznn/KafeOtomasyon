@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DB92DEC5-ACB8-4474-9ABF-939C13623920}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KahveOtomasyonProjesi</RootNamespace>
+    <AssemblyName>KahveOtomasyonProjesi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AyarlarMasaUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AyarlarMasaUserControl.Designer.cs">
+      <DependentUpon>AyarlarMasaUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AyarlarProfilUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AyarlarProfilUserControl.Designer.cs">
+      <DependentUpon>AyarlarProfilUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AyarlarUrunUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AyarlarUrunUserControl.Designer.cs">
+      <DependentUpon>AyarlarUrunUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AyarlarVeresiyeUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AyarlarVeresiyeUserControl.Designer.cs">
+      <DependentUpon>AyarlarVeresiyeUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CiroTakipUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CiroTakipUserControl.Designer.cs">
+      <DependentUpon>CiroTakipUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlStyles.cs" />
+    <Compile Include="FrmAyarlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAyarlar.Designer.cs">
+      <DependentUpon>FrmAyarlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGiris.Designer.cs">
+      <DependentUpon>FrmGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmistatistikler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmistatistikler.Designer.cs">
+      <DependentUpon>Frmistatistikler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKasaRaporu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKasaRaporu.Designer.cs">
+      <DependentUpon>FrmKasaRaporu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMasaDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMasaDetay.Designer.cs">
+      <DependentUpon>FrmMasaDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMasaRaporuDetayi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMasaRaporuDetayi.Designer.cs">
+      <DependentUpon>FrmMasaRaporuDetayi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMusteriVeresiyeHareketleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMusteriVeresiyeHareketleri.Designer.cs">
+      <DependentUpon>FrmMusteriVeresiyeHareketleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOdemeYontemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOdemeYontemleri.Designer.cs">
+      <DependentUpon>FrmOdemeYontemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSatisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSatisEkrani.Designer.cs">
+      <DependentUpon>FrmSatisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSayfalaraGecisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSayfalaraGecisEkrani.Designer.cs">
+      <DependentUpon>FrmSayfalaraGecisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSiparisDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSiparisDetay.Designer.cs">
+      <DependentUpon>FrmSiparisDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSiparisUrunleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSiparisUrunleri.Designer.cs">
+      <DependentUpon>FrmSiparisUrunleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUrunGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUrunGiris.Designer.cs">
+      <DependentUpon>FrmUrunGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVeresiyeBorclari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVeresiyeBorclari.Designer.cs">
+      <DependentUpon>FrmVeresiyeBorclari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVeresiyeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVeresiyeler.Designer.cs">
+      <DependentUpon>FrmVeresiyeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVeresiyeSatis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVeresiyeSatis.Designer.cs">
+      <DependentUpon>FrmVeresiyeSatis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmYeniMusteriKaydi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYeniMusteriKaydi.Designer.cs">
+      <DependentUpon>FrmYeniMusteriKaydi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputBox.Designer.cs">
+      <DependentUpon>InputBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciBilgileri.cs" />
+    <Compile Include="MasaRaporlarıUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MasaRaporlarıUserControl.Designer.cs">
+      <DependentUpon>MasaRaporlarıUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OzetUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OzetUserControl.Designer.cs">
+      <DependentUpon>OzetUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sqlbaglantisi.cs" />
+    <Compile Include="UrunRaporlariUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UrunRaporlariUserControl.Designer.cs">
+      <DependentUpon>UrunRaporlariUserControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AyarlarMasaUserControl.resx">
+      <DependentUpon>AyarlarMasaUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AyarlarProfilUserControl.resx">
+      <DependentUpon>AyarlarProfilUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AyarlarUrunUserControl.resx">
+      <DependentUpon>AyarlarUrunUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AyarlarVeresiyeUserControl.resx">
+      <DependentUpon>AyarlarVeresiyeUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CiroTakipUserControl.resx">
+      <DependentUpon>CiroTakipUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAyarlar.resx">
+      <DependentUpon>FrmAyarlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGiris.resx">
+      <DependentUpon>FrmGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmistatistikler.resx">
+      <DependentUpon>Frmistatistikler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKasaRaporu.resx">
+      <DependentUpon>FrmKasaRaporu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMasaDetay.resx">
+      <DependentUpon>FrmMasaDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMasaRaporuDetayi.resx">
+      <DependentUpon>FrmMasaRaporuDetayi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMusteriVeresiyeHareketleri.resx">
+      <DependentUpon>FrmMusteriVeresiyeHareketleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOdemeYontemleri.resx">
+      <DependentUpon>FrmOdemeYontemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSatisEkrani.resx">
+      <DependentUpon>FrmSatisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSayfalaraGecisEkrani.resx">
+      <DependentUpon>FrmSayfalaraGecisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSiparisDetay.resx">
+      <DependentUpon>FrmSiparisDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSiparisUrunleri.resx">
+      <DependentUpon>FrmSiparisUrunleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUrunGiris.resx">
+      <DependentUpon>FrmUrunGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVeresiyeBorclari.resx">
+      <DependentUpon>FrmVeresiyeBorclari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVeresiyeler.resx">
+      <DependentUpon>FrmVeresiyeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVeresiyeSatis.resx">
+      <DependentUpon>FrmVeresiyeSatis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYeniMusteriKaydi.resx">
+      <DependentUpon>FrmYeniMusteriKaydi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasaRaporlarıUserControl.resx">
+      <DependentUpon>MasaRaporlarıUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OzetUserControl.resx">
+      <DependentUpon>OzetUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UrunRaporlariUserControl.resx">
+      <DependentUpon>UrunRaporlariUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
